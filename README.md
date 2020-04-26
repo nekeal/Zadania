@@ -1,11 +1,5 @@
 # Zadania
 Zadania do laboratorium z JPWP
+Projekt należy otworzyć za pomocą funkcji "import project"
 
-Otwarcie projektu w Android Studio:![](images/import3.png)</br>
-następnie:![](images/import2.png)
-
-lub:
-![](images/import1.png)
-
-następnie:
-![](images/import2.png)
+![](images/import4.png)
