@@ -11,8 +11,17 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainActivity extends AppCompatActivity implements HelloFragmentA.HelloFragmentAListener,
-        HelloFragmentB.SendCityNameListener {
+//TODO użyj tej linii do zadania 2.1 oraz 2.2
+public class MainActivity extends AppCompatActivity {
+
+//TODO użyj tej linii do zadania 3
+//public class MainActivity extends AppCompatActivity implements HelloFragmentA.HelloFragmentAListener {
+
+//TODO użyj tej linii do zadania 4 i wzwyż
+//public class MainActivity extends AppCompatActivity implements HelloFragmentA.HelloFragmentAListener,
+//        HelloFragmentB.SendCityNameListener {
+
+
 
     private HelloFragmentB fragmentB;   //podany kod
     private HelloFragmentA fragmentA;   //podany kod
@@ -34,10 +43,7 @@ public class MainActivity extends AppCompatActivity implements HelloFragmentA.He
 
         navbar = findViewById(R.id.bottom_nav_bar);                 //podany kod
         navbar.setOnNavigationItemSelectedListener(navListener);    //podany kod
-
-                                                                                          //TODO zad. 2.2
-                                                                                        //TODO zad. 2.2
-                                                                                       //TODO zad. 2.2
+        //TODO zad. 2.2 tutaj dowiąż "startowy" fragment
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =                         //podany kod
@@ -60,9 +66,21 @@ public class MainActivity extends AppCompatActivity implements HelloFragmentA.He
                 }
             };
 
-    //TODO zad. 3
+// odkomentuj poniższy kod w trakcie wykonywania zadania 3
+//    @Override
+//    public void sendData(String text) {
+//        //TODO wywołaj uzupełnioną przez Ciebie metodę updateData(String text) {...}
+//    }
 
-
-    //TODO zad. 4
+// odkomentuj poniższy kod w trakcie wykonywania zadania 4
+//    @Override
+//    public void newCity(String city) {
+//        fragmentA.updateCity(city);
+//        navbar.setSelectedItemId(R.id.fragment_a);
+//        getSupportFragmentManager()
+//                .beginTransaction()
+//                .replace(R.id.fragment_container, fragmentA)
+//                .commit();
+//    }
 
 }
