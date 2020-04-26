@@ -1,7 +1,7 @@
 # Zadania
 Zadania do laboratorium z JPWP
 
-Otwarcie projektu w Android Studio:
+Otwarcie projektu w Android Studio:\n
 ![](images/import3.png)
 
 
