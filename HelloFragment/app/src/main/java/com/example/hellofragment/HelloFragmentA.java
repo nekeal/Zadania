@@ -57,20 +57,27 @@ public class HelloFragmentA extends Fragment {
     }
 
 
-    //TODO zadanie 2.1
+
     //TODO zadanie 4
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         //TODO zad 2.1 użyj wyglądu z pliku hello_fragment_a.xml, plik ten wskazywany jest
         //     przez id  - nazwa pliku bez rozszeżenia, poszczególen id layoutów przechowywane przez R.layout..
-        //     Następnym krokiem jest "znalezienie" poszczególnych elementów zdefiniowanych w wyglądzie,
-        //     plik zanjduje się w app/res/layout/
+        //     wstaw ten layout do poniższego kodu
 
-        //TODO zad. 4 należy zmienić wygląd na hello_fragment_a_final.xml, znaleźć nowe elementy
+        View view = inflater.inflate(/*tu wstaw odpowiedni layout*/, container, false);
+
+        // TODO zad2.1 Następnym krokiem jest "znalezienie" poszczególnych elementów zdefiniowanych w wyglądzie.
+        //    W celu znalezienia poszczególnych elementów użyj metody view.findViewById(R.id.nazwa_elementu)
+        //     nazwe elementu możesz znaleść w pliku app/res/layout/hello_fragment_a.xml, w którym zdefiniowany jest wygląd danego fragmentu. Znajdź
+        //     kawałek kodu odpowiedzialny za dany element (textView), jego id definiowane jest w polu android:id (id danego elementu to nazwa
+        //     umieszczona po znaczniku @+id/)
+
+        //TODO zad. 4 należy zmienić wygląd na hello_fragment_a_final.xml, znaleźć nowe elementy (tak samo jak w zadaniu 2.1)
         //     oraz za pomocą metody setText() ustawić tekst wyświetlany przez cityName na ten
         //     przechowywany w zmiennej cityNameString
-        View view = inflater.inflate(/*tu wstaw odpowiedni layout*/, container, false);
+
 //        odkomętuj poniższy kod po wykonaniu zadania 4
 //        if(cityNameString != null) {
 //            fetchWeatherDetails();
@@ -98,7 +105,7 @@ public class HelloFragmentA extends Fragment {
         //TODO przypisz zawarotść zmiennej city do cityNameString
     }
 
-// odkomętuj poniższy kod po wykonaniu zadania 4
+//TODO odkometuj poniższy kod po wykonaniu zadania 4
 //    private void fetchWeatherDetails() {
 //       //TODO Stworzyć instancję retrofit przy użyciu metody statycznej z klasy NetworkClient
 //

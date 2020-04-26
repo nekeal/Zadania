@@ -40,7 +40,7 @@ public class HelloFragmentB extends Fragment {
     }
 
 
-    //TODO zadanie 2.1: uzupełnij metodę onCreateview(...)
+
     //TODO zadanie 3:   komunikacja
     //TODO zadanie 4:   przygowtowanie do API
     @Nullable
@@ -48,13 +48,19 @@ public class HelloFragmentB extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         //TODO zad 2.1 użyj wyglądu z pliku hello_fragment_b.xml, plik ten wskazywany jest
         //     przez id - nazwa pliku bez rozszeżenia, poszczególen id layoutów przechowywane przez R.layout..
-        //     Następnym krokiem jest "znalezienie" poszczególnych elementów zdefiniowanych w wyglądzie,
-        //     plik zanjduje się w app/res/layout/
+        //     wstaw ten layout do poniższego kodu
+        View view = inflater.inflate(/*tu wstaw odpowiedni layout*/, container, false);
+        // TODO zad2.1 Następnym krokiem jest "znalezienie" poszczególnych elementów (textView) zdefiniowanych w wyglądzie.
+        //     W celu znalezienia poszczególnych elementów użyj metody view.findViewById(R.id.nazwa_elementu)
+        //     nazwe elementu możesz znaleść w pliku app/res/layout/hello_fragment_b.xml, w którym zdefiniowany jest wygląd danego fragmentu. Znajdź
+        //     kawałek kodu odpowiedzialny za dany element (textView), jego id definiowane jest w polu android:id (id danego elementu to nazwa
+        //     umieszczona po znaczniku @+id/)
+
 
         //TODO zad. 3 za pomocą metody setText() zmień tekst wyświetlany przez textView na ten przechowywany w textViewString
 
-        //TODO zad. 4 należy zmienić wygląd na hello_fragment_b_final.xml, znaleźć nowe elementy
-        View view = inflater.inflate(/*tu wstaw odpowiedni layout*/, container, false);
+        //TODO zad. 4 należy zmienić wygląd na hello_fragment_b_final.xml, znaleźć nowe elementy (tak samo jak w zadaniu 2.1)
+
 
 // odkomentuj poniższy kod w trakcie wykonywania zadania 4
 //        searchCity.setOnEditorActionListener(editorActionListener);

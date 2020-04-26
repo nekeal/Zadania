@@ -11,10 +11,10 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-//TODO użyj tej linii do zadania 2.1 oraz 2.2
+//TODO użyj tej linii do zadania 2.1 oraz 2.2 (potem zakomentuj i odkomentuj kolejne)
 public class MainActivity extends AppCompatActivity {
 
-//TODO użyj tej linii do zadania 3
+//TODO użyj tej linii do zadania 3 (potem zakomentuj i odkomentuj kolejne)
 //public class MainActivity extends AppCompatActivity implements HelloFragmentA.HelloFragmentAListener {
 
 //TODO użyj tej linii do zadania 4 i wzwyż
@@ -43,7 +43,12 @@ public class MainActivity extends AppCompatActivity {
 
         navbar = findViewById(R.id.bottom_nav_bar);                 //podany kod
         navbar.setOnNavigationItemSelectedListener(navListener);    //podany kod
-        //TODO zad. 2.2 tutaj dowiąż "startowy" fragment
+        //TODO zad. 2.2 tutaj dowiąż "startowy" fragment. Na początek przypisz wynik metody getSupportFragmentManager() do
+        // obiektu klasy FragmentManager (nazwij do fragmentManager). Następnie na obiekcie fragmentManager wywołaj funkcję
+        // beginTransaction() i jej wynik przypisz do obiektu klasy FragmentTransaction (nazwij go fragmentTransaction).
+        // Ostatnim krokiem będzie wywołanie metody replace (jako parametry przyjmuje ona R.id.fragment_container, fragmentA)
+        // na obiekcie fragmentTransaction oraz metody commit().
+
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =                         //podany kod
