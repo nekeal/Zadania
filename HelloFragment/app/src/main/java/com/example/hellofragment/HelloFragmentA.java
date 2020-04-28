@@ -66,7 +66,7 @@ public class HelloFragmentA extends Fragment {
         //     przez id  - nazwa pliku bez rozszeżenia, poszczególen id layoutów przechowywane przez R.layout..
         //     wstaw ten layout do poniższego kodu
 
-        View view = inflater.inflate(/*tu wstaw odpowiedni layout*/, container, false);
+        View view = inflater.inflate(R.layout.hello_fragment_a, container, false);
 
         // TODO zad2.1 Następnym krokiem jest "znalezienie" poszczególnych elementów zdefiniowanych w wyglądzie.
         //    W celu znalezienia poszczególnych elementów użyj metody view.findViewById(R.id.nazwa_elementu)
@@ -97,11 +97,13 @@ public class HelloFragmentA extends Fragment {
     @Override
     public void onDetach() {
         super.onDetach();
+        helloFragmentAListener = null;
         //TODO nadpisz zmienną helloFragmentAListener w taki sposób, aby garbage collector mógł ją usunąć
     }
 
     //TODO zad. 4
     void updateCity(String city){
+        cityNameString = city;
         //TODO przypisz zawarotść zmiennej city do cityNameString
     }
 

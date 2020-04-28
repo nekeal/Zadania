@@ -49,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
         // Ostatnim krokiem będzie wywołanie metody replace (jako parametry przyjmuje ona R.id.fragment_container, fragmentA)
         // na obiekcie fragmentTransaction oraz metody commit().
 
+        FragmentManager fManager = getSupportFragmentManager();
+        FragmentTransaction fTransaction = fManager.beginTransaction();
+        fTransaction.replace(R.id.fragment_container, fragmentA).commit();
+
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =                         //podany kod
