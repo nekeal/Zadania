@@ -60,6 +60,8 @@ public class HelloFragmentB extends Fragment {
 
 
         //TODO zad. 3 za pomocą metody setText() zmień tekst wyświetlany przez textView na ten przechowywany w textViewString
+        if (textViewString != null && textViewString.equals(""))                                  //TODO zad. 3
+            textView.setText(textViewString);                                                 //TODO zad.
 
         //TODO zad. 4 należy zmienić wygląd na hello_fragment_b_final.xml, znaleźć nowe elementy (tak samo jak w zadaniu 2.1)
 //        searchCity = view.findViewById(R.id.search);

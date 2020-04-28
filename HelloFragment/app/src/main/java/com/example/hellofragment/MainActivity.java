@@ -12,10 +12,10 @@ import android.view.MenuItem;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 //TODO użyj tej linii do zadania 2.1 oraz 2.2 (potem zakomentuj i odkomentuj kolejne)
-public class MainActivity extends AppCompatActivity {
+//public class MainActivity extends AppCompatActivity {
 
 //TODO użyj tej linii do zadania 3 (potem zakomentuj i odkomentuj kolejne)
-//public class MainActivity extends AppCompatActivity implements HelloFragmentA.HelloFragmentAListener {
+public class MainActivity extends AppCompatActivity implements HelloFragmentA.HelloFragmentAListener {
 
 //TODO użyj tej linii do zadania 4 i wzwyż
 //public class MainActivity extends AppCompatActivity implements HelloFragmentA.HelloFragmentAListener,
@@ -76,10 +76,11 @@ public class MainActivity extends AppCompatActivity {
             };
 
 // odkomentuj poniższy kod w trakcie wykonywania zadania 3
-//    @Override
-//    public void sendData(String text) {
-//        //TODO wywołaj uzupełnioną przez Ciebie metodę updateData(String text) {...}
-//    }
+    @Override
+    public void sendData(String text) {
+        //TODO wywołaj uzupełnioną przez Ciebie metodę updateData(String text) {...}
+        fragmentB.updateData(text);
+    }
 
 // odkomentuj poniższy kod w trakcie wykonywania zadania 4
 //    @Override

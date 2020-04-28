@@ -40,6 +40,7 @@ public class HelloFragmentA extends Fragment {
 
     //TODO zad. 3
     public interface HelloFragmentAListener{
+        void sendData(String text);
     //TODO tutaj zadeklaruj metodę, która posłuży do przesłania tekstu do fragmentu B
     }
 
@@ -54,6 +55,11 @@ public class HelloFragmentA extends Fragment {
         //     do MainActivity. Jeżeli jest, to dołącz helloFragmentAListener do tej instancji, w
         //     tym celu musisz rzutować context na HelloFragmentAListener.
         //     Rzuć wyjątkiem RuntimeException jeśli nie jest.
+        if(context instanceof HelloFragmentAListener)
+            helloFragmentAListener = (HelloFragmentAListener)context;
+        else
+            throw new RuntimeException();
+
     }
 
 
@@ -90,6 +96,7 @@ public class HelloFragmentA extends Fragment {
     public void onPause() {
         super.onPause();
         //TODO wywołaj na helloFragmentAListener zadeklarowaną przez Ciebie metodę.
+        helloFragmentAListener.sendData("dane");
     }
 
 
